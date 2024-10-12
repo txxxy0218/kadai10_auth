@@ -1,0 +1,471 @@
+/* ---------------------------------------------------------------- */
+/* フォント */
+/* ---------------------------------------------------------------- */
+
+.kosugi-maru-regular {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.zen-maru-gothic-light {
+font-family: "Zen Maru Gothic", serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.zen-maru-gothic-regular {
+font-family: "Zen Maru Gothic", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.zen-maru-gothic-medium {
+font-family: "Zen Maru Gothic", serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.zen-maru-gothic-bold {
+font-family: "Zen Maru Gothic", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.zen-maru-gothic-black {
+font-family: "Zen Maru Gothic", serif;
+font-weight: 900;
+font-style: normal;
+}
+
+body {
+    font-family: "Zen Maru Gothic", serif;
+    font-style: normal;
+    line-height: 150%;
+    color: #333;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* 装飾系 */
+/* ---------------------------------------------------------------- */
+
+body a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    opacity: 60%;
+}
+
+ul {
+    list-style-type: none
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: dashed 1px rgb(238, 207, 253);
+}
+
+input {
+    background-color: white;
+    border: solid 1px #7d7d7d;
+    border-radius: 32px;
+}
+
+textarea {
+    background-color: white;
+    border: solid 1px #7d7d7d;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.primary-button {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px 16px;
+    background-color: rgb(144, 55, 188);
+    color: white;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.secondary-button {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px 16px;
+    background-color: white;
+    color: rgb(144, 55, 188);
+    font-weight: 500;
+    line-height: 20px;
+    border: 1px solid rgb(144, 55, 188);
+    border-radius: 20px;
+}
+
+h1 {
+    margin-bottom: 32px;
+}
+
+h2 {
+    margin-bottom: 24px;
+}
+
+hr {
+    margin: 32px 0;
+    border: 1px dashed rgb(246, 234, 252);
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* レイアウト */
+/* ---------------------------------------------------------------- */
+
+/* 全体 */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(246, 234, 252);
+}
+
+main {
+    min-height: 90vh;
+    padding: 40px 80px;
+    margin-top: 56px;
+    box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    padding: 16px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+/* フッター */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: #333;
+}
+
+
+
+/* indexページ */
+
+.search {
+    text-align: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.search input {
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 320px;
+    height: 40px;
+    padding: 8px 8px 8px 16px;
+    margin-right: 8px;
+}
+
+.search button {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px 16px;
+    background-color: rgb(144, 55, 188);
+    color: white;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.questions-wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 40px;
+}
+
+.questions {
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 0 auto;
+}
+
+.questions h3 {
+    margin-bottom: 16px;
+}
+
+.more {
+    display: block;
+    text-align: center;
+    color: rgb(144, 55, 188);
+    margin-top: 16px;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+
+/* questionページ */
+
+.two-column {
+    display: flex;
+    gap: 40px;
+}
+
+.post {
+    width: 40%;
+}
+
+.post p {
+    margin-bottom: 24px;
+}
+
+form label {
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+form input {
+    width: 320px;
+    padding: 8px 16px;
+}
+
+form textarea {
+    width: 320px;
+}
+
+.input-wrapper {
+    margin-bottom: 16px;
+}
+
+.my-q {
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: rgb(238, 207, 253);
+    padding: 8px;
+}
+
+td {
+    border-bottom: 1px solid rgb(238, 207, 253);
+    padding: 8px;
+}
+
+.t-1 {
+    width: 10%;
+    text-align: center;
+}
+.t-2 {
+    width: 60%;
+}
+.t-3 {
+    width: 15%;
+    text-align: center;
+}
+.t-4 {
+    width: 15%;
+    text-align: center;
+}
+
+
+/* question_filledページ */
+
+.back {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: rgb(144, 55, 188);
+}
+
+.delete_button {
+    color: rgb(144, 55, 188);
+}
+
+.edit_button {
+    color: rgb(144, 55, 188);
+}
+
+
+/* loginページ */
+
+.log-wrapper {
+    background-color: white;
+    width: 368px;
+    padding: 24px;
+    margin: 80px auto;
+    border-radius: 16px;
+}
+
+.pw-wrapper {
+    position: relative;
+}
+
+#passview, #passview2 {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+}
+
+.log_title {
+    text-align: center;
+}
+
+.fill-btn {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.switch-log {
+    margin-top: 24px;
+}
+
+.switch-log p {
+    color: #4f4f4f;
+    font-size: 14px;
+    text-align: center;
+}
+
+.switch-log a {
+    display: block;
+    margin: 0 auto;
+    color: rgb(144, 55, 188);
+    font-size: 16px;
+    text-align: center;
+}
+
+.log-wrapper label {
+    width: 100%;
+}
+
+/* login_faultページ */
+.error {
+    color: red;
+}
+
+
+/* profileページ */
+
+.link {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: rgb(144, 55, 188);
+}
+
+.lg-icon {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 40px;
+}
+
+.md-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 40px;
+}
+
+.prof-wrapper {
+    position: relative;
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.basic-prof-wrapper {
+    display: flex;
+    /* align-items: center; */
+}
+
+.prof-item {
+    display: flex;
+    height: 40px;
+}
+
+.prof-item h4 {
+    width: 120px;
+}
+
+.kids_table {
+    margin-bottom: 24px;
+}
+
+
+/* proflie_editページ */
+
+.k-prof {
+    display: flex;
+    gap: 24px;
+}
+
+.k-prof .input-wrapper input {
+    width: 100%;
+}
+
+.radio_o_wrapper input {
+    width: 16px;
+}
+
+.radio_o_wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.radio_option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-circle {
+    width: 16px;
+}
